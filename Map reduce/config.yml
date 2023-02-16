@@ -1,0 +1,10 @@
+master:
+  ip: 127.0.0.1
+  port: 12000
+  mapperCount: 3
+  reducerCount: 2
+  mapperDir: mapper
+  reducerDir: reducer
+  application: word count
+  inputFile: input.txt
+  outputFile: output.txt
