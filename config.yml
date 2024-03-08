@@ -12,6 +12,6 @@ master:
 recvBufferSize: 16000
 store:
   file: store.txt
-  ip: 10.21.93.107
+  ip: 10.0.0.181
   port: 12101
   process: server.py

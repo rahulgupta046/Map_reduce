@@ -6,21 +6,23 @@ import socket
 import time
 import threading
 
-
 #read config file
 with open('config.yml', 'r') as yml:
     cfg = yaml.load(yml, Loader= yaml.FullLoader)
 masterCfg = cfg['master']
 storeCfg = cfg['store']
 
+
 PORT = masterCfg['port']
 application = cfg['application']
+
 
 mapperCount = masterCfg['mapperCount']
 mapperDir = masterCfg['mapperDir']
 
 reducerCount = masterCfg['reducerCount']
 reducerDir = masterCfg['reducerDir']
+
 
 inputFile = masterCfg['inputFile']
 outputFile = masterCfg['outputFile']
@@ -29,7 +31,12 @@ outputFile = masterCfg['outputFile']
 store_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 store_PORT = cfg['store']['port']
 store_IP  = cfg['store']['ip']
+
 store_socket.connect((store_IP, store_PORT))
+
+print(store_IP, store_PORT)
+print("CONFIG DONE ")
+
 
 def combine():
     for f in redOutputFiles:
