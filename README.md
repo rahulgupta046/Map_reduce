@@ -1,6 +1,7 @@
 # Distributed Map-Reduce System for Inverted Index and Word Count
 
-![Distributed Map-Reduce System]image.webp
+![Distributed Map-Reduce System](/image.webp)
+
 
 ## Overview
 This project implements a distributed map-reduce system in Python, designed to efficiently process large datasets for creating inverted indexes and performing word count operations. The system leverages the principles of parallel processing, distributing the workload across multiple nodes to speed up the data processing tasks.
