@@ -1,0 +1,17 @@
+application: word_count
+fault: 0
+master:
+  inputFile: input.txt
+  ip: 127.0.0.1
+  mapperCount: 5
+  mapperDir: mapper
+  outputFile: output.txt
+  port: 12000
+  reducerCount: 2
+  reducerDir: reducer
+recvBufferSize: 16000
+store:
+  file: store.txt
+  ip: 10.21.93.107
+  port: 12101
+  process: server.py
