@@ -15,8 +15,7 @@ This project implements a distributed map-reduce system in Python, designed to e
 
 ## Getting Started
 ### Prerequisites
-- Python 3.x
-- Additional Python libraries: [List any libraries or frameworks used]
+- Python 3.8 and above
 
 ### Installation
 1. Clone the repository to your local machine:
@@ -28,4 +27,6 @@ This project implements a distributed map-reduce system in Python, designed to e
 To start processing your data with the map-reduce system, follow these steps:
 1. run command - python store.py - to start custom key value store
 2. run command - python master.py after altering the config file
+3. input.txt contains the text input, it can be transformed into batch input style as well
+4. result is in output.txt
 
