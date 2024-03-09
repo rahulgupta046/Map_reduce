@@ -1,6 +1,6 @@
 # Distributed Map-Reduce System for Inverted Index and Word Count
 
-![Distributed Map-Reduce System](/image.webp)
+![Distributed Map-Reduce System](distributed_map_reduce/image.webp)
 
 
 ## Overview
