@@ -7,7 +7,7 @@ import time
 import threading
 
 #read config file
-with open('config.yml', 'r') as yml:
+with open('distributed_map_reduce/config.yml', 'r') as yml:
     cfg = yaml.load(yml, Loader= yaml.FullLoader)
 masterCfg = cfg['master']
 storeCfg = cfg['store']

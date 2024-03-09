@@ -52,12 +52,12 @@ class ReadWriteLock:
         """ Release a write lock. """
         self._read_ready.release(  )
 
-with open('config.yml', 'r') as yml:
+with open('distributed_map_reduce/config.yml', 'r') as yml:
     cfg = yaml.load(yml, Loader= yaml.FullLoader)
     hostname = socket.gethostname()
     server_IP = socket.gethostbyname(hostname)
     cfg['store']['ip'] = server_IP
-with open('config.yml', 'w') as f:
+with open('distributed_map_reduce/config.yml', 'w') as f:
     yaml.dump(cfg, f)
 masterCfg = cfg['master']
 storeCfg = cfg['store']

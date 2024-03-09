@@ -1,0 +1,17 @@
+application: word_count
+fault: 0
+master:
+  inputFile: distributed_map_reduce/input.txt
+  ip: 127.0.0.1
+  mapperCount: 5
+  mapperDir: distributed_map_reduce/mapper
+  outputFile: distributed_map_reduce/output.txt
+  port: 12000
+  reducerCount: 2
+  reducerDir: distributed_map_reduce/reducer
+recvBufferSize: 16000
+store:
+  file: distributed_map_reduce/store.txt
+  ip: 127.0.0.1
+  port: 12101
+  process: distributed_map_reduce/server.py
